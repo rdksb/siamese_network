@@ -42,11 +42,10 @@ kernel_size_4 = (4, 4)
 n_dense_neurons = 4096
 n_classes = 1
 
-"""
-A custom layer to compute L1 distance between two image representations
-(both are outputs of convnet)
-"""
+
 class DistanceLayer(tf.keras.layers.Layer):
+    """A custom layer to compute L1 distance between two image representations
+    (both are outputs of convnet)"""
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
