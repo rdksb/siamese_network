@@ -15,13 +15,7 @@ WIDTH = 105
 HEIGHT = 105
 
 def omniglot_download(root_dir):
-    """
-    Download Omniglot dataset (50 alphabets)
-
-    The dataset comes with a standard split into two sets:
-    - A background set of 30 alphabets, 964 classes with 20 samples in each class
-    - An evaluation set of 20 alphabets with 659 classes, 20 samples in each class
-    """
+    """Download Omniglot dataset (50 alphabets)"""
     urls = ['https://github.com/brendenlake/omniglot/raw/master/python/images_background.zip',
             'https://github.com/brendenlake/omniglot/raw/master/python/images_evaluation.zip']
     for url in urls:
